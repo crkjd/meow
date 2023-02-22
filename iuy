@@ -1,0 +1,57 @@
+using System;
+class meoww
+{
+    static void Main()
+    {
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        byte i;
+        do
+        {
+            Console.WriteLine();
+            Console.WriteLine("Меню");
+            Console.WriteLine("1 - введите А");
+            Console.WriteLine("2 - введите В");
+            Console.WriteLine("3 - умножение");
+            Console.WriteLine("4 - деление А - В");
+
+            Console.WriteLine("Введите число");
+            i = Convert.ToByte(Console.ReadLine());
+            
+            switch (i)
+            {
+                case 1:
+                    {
+                        Console.Write("a= ");
+                        a = Convert.ToInt32(Console.ReadLine());
+                        Console.Write(a);
+                        break;
+                        
+                    }
+                case 2:
+                    {
+                        Console.Write("b= ");
+                        b = Convert.ToInt32(Console.ReadLine());
+                        Console.Write(b);
+                        break;
+                    }
+                case 3:
+                    {
+                        c = a * b;
+                        Console.Write("c=");
+                        Console.Write(c);
+                        break;
+                    }
+                case 4:
+                    {
+                        c = a / b;
+                        Console.Write("c=");
+                        Console.Write(c);
+                        break;
+                    }
+            }
+        }
+        while (i != 0);
+    }
+}
