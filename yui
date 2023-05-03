@@ -45,7 +45,7 @@ class meoww
                     }
                 case 4:
                     {
-                        c = a - b;
+                        c = a * b;
                         Console.Write("c=");
                         Console.Write(c);
                         break;
